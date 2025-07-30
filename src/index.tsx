@@ -14,7 +14,7 @@
 import { isMasterApp } from 'hel-iso';
 import { libReady } from 'hel-lib-proxy';
 import { LIB_NAME } from './configs/subApp';
-import 'tdesign-react/es/style/index.css';
+// import 'tdesign-react/es/style/index.css';
 
 async function main() {
   // 如有其他包依赖，且需要在逻辑里静态导入，可在此处执行预抓取

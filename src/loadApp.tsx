@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import comps from 'components';
+import {MyComp} from 'components';
 
 function getHostNode(id = 'root') {
   let node = document.getElementById(id);
@@ -15,6 +15,6 @@ function getHostNode(id = 'root') {
 
 const { REACT_APP_COMP_TYPE = 'Button' } = process.env;
 // @ts-ignore
-const Comp = comps[REACT_APP_COMP_TYPE] || (() => <h1>comp {REACT_APP_COMP_TYPE} not defined</h1>);
+const Comp = MyComp[REACT_APP_COMP_TYPE] || (() => <h1>comp {REACT_APP_COMP_TYPE} not defined</h1>);
 
 ReactDOM.render(<Comp />, getHostNode('root'));

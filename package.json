@@ -1,27 +1,34 @@
 {
-  "name": "hel-tdesign-react",
-  "appGroupName": "hel-tdesign-react",
-  "version": "1.5.0",
+  "name": "@tencent/hel-spaui",
+  "appGroupName": "@tencent/hel-spaui",
+  "version": "1.0.0",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "unpkg": "hel_dist/entry.js",
   "types": "lib/entrance/libTypes.ts",
   "dependencies": {
+    "@tencent/od-icon": "^0.0.84",
+    "@tencent/odc": "^1.0.272",
+    "@tencent/spaui": "^3.0.395-beta.0",
     "hel-iso": "^4.3.2",
     "hel-lib-proxy": "^4.7.0",
     "hel-utils": "^4.7.0",
     "react": ">=16.14.0",
     "react-app-polyfill": ">=1.0.6",
-    "react-dom": ">=16.14.0",
-    "tdesign-react": "0.42.1"
+    "react-dom": ">=16.14.0"
   },
   "peerDependencies": {
     "hel-iso": "^4.3.2",
     "hel-lib-proxy": "^4.7.0",
     "hel-utils": "^4.7.0",
     "react": ">=16.14.0",
-    "react-dom": ">=16.14.0",
-    "tdesign-react": "0.42.1"
+    "react-dom": ">=16.14.0"
+  },
+  "externals": {
+    "react": "React",
+    "react-dom": "ReactDOM",
+    "@tencent/spaui": "SPAUI",
+    "@tencent/odc": "ODC"
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",

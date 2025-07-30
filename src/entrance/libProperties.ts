@@ -1,6 +1,6 @@
-import tDesignReact, { MyComp } from 'components';
+import { MyComp } from 'components';
 
-const toExport = { ...tDesignReact, MyComp };
+const toExport = {  MyComp };
 
 export type LibProperties = typeof toExport;
 

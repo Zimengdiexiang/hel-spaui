@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from './style.module.css';
-import { message, Dialog, DatePicker } from 'tdesign-react';
+import { message, Dialog, DatePicker } from '@tencent/spaui';
+import { Flex } from '@tencent/odc';
 import { getMayStaticShadowNode } from 'hel-utils';
 import { LIB_NAME } from 'configs/subApp';
 
@@ -23,7 +24,7 @@ export default React.forwardRef(function MyComp(props: any, ref) {
 
   const onCLick = () => {
     message.info({
-      content: '来自tdesign-react的提示',
+      content: '来自spaui-react的提示',
       attach,
     });
   };
@@ -32,7 +33,7 @@ export default React.forwardRef(function MyComp(props: any, ref) {
       test
     </Dialog>
     <DatePicker popupProps={{ attach }} />
-
+    <Flex>11111111</Flex>
     <button onClick={() => setVisible(true)}>show dialog</button>
     <h1 className={styled.card} onClick={onCLick}>hi comp, click me</h1>
     <div>

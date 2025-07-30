@@ -6,4 +6,4 @@
 |--------------------------------------------------------------------------
 */
 
-export const LIB_NAME = 'hel-tdesign-react';
+export const LIB_NAME = '@tencent/hel-spaui';
