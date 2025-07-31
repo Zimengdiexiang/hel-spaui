@@ -1,6 +1,6 @@
 const helDevUtils = require('hel-dev-utils');
-const pkg = require('../package.json');
+const unpkg = require('../package.json');
 
-const appInfo = helDevUtils.createReactSubApp(pkg,{ homePage: 'https://mirrors.tencent.com/npm' });
+const appInfo = helDevUtils.createReactSubApp(unpkg);
 
 module.exports = appInfo;
